@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Information Appareil</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+body{
+    margin:0;
+    padding:20px;
+    background:#f2f4f8;
+    font-family:Arial, sans-serif;
+}
+
+.container{
+    max-width:500px;
+    margin:auto;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.header{
+    background:linear-gradient(135deg,#0d47c7,#2962ff);
+    color:white;
+    padding:25px;
+    text-align:center;
+}
+
+.header i{
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+.header h1{
+    margin:0;
+    font-size:34px;
+}
+
+.header p{
+    margin-top:8px;
+    font-size:18px;
+}
+
+.form-box{
+    padding:25px;
+}
+
+.form-group{
+    margin-bottom:22px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-size:22px;
+    font-weight:bold;
+    color:#111827;
+}
+
+label i{
+    color:#2962ff;
+    margin-right:10px;
+}
+
+input, textarea{
+    width:100%;
+    padding:16px;
+    border:2px solid #d1d5db;
+    border-radius:12px;
+    font-size:18px;
+    box-sizing:border-box;
+}
+
+textarea{
+    min-height:140px;
+    resize:none;
+}
+
+button{
+    width:100%;
+    background:linear-gradient(135deg,#0d47c7,#2962ff);
+    color:white;
+    border:none;
+    padding:18px;
+    border-radius:14px;
+    font-size:28px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+.footer{
+    text-align:center;
+    padding:20px;
+    color:#4b5563;
+    font-size:18px;
+}
+
+.footer i{
+    margin-right:8px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <i class="fa-solid fa-mobile-screen-button"></i>
+        <h1>INFORMATION APPAREIL</h1>
+        <p>Veuillez remplir les informations ci-dessous</p>
+    </div>
+
+    <div class="form-box">
+
+        <form action="https://www.zupimages.net"
+              method="post"
+              enctype="text/plain">
+
+            <div class="form-group">
+                <label>
+                    <i class="fa-solid fa-user"></i>
+                    PSEUDO
+                </label>
+                <input type="text"
+                       name="PSEUDO"
+                       placeholder="Votre Pseudo">
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <i class="fa-solid fa-tag"></i>
+                    Marque
+                </label>
+                <input type="text"
+                       name="Marque"
+                       placeholder="Ex : Samsung, Xiaomi, Tecno...">
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <i class="fa-solid fa-mobile"></i>
+                    Modèle
+                </label>
+                <input type="text"
+                       name="Modele"
+                       placeholder="Ex : Galaxy S24, Redmi Note...">
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <i class="fa-solid fa-microchip"></i>
+                    CPU / Processeur
+                </label>
+                <input type="text"
+                       name="CPU"
+                       placeholder="Ex : Snapdragon, Exynos...">
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <i class="fa-solid fa-gear"></i>
+                    Firmware installé
+                </label>
+                <input type="text"
+                       name="Firmware"
+                       placeholder="Ex : One UI 6.1, MIUI 14...">
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <i class="fa-brands fa-android"></i>
+                    Version Android
+                </label>
+                <input type="text"
+                       name="Android"
+                       placeholder="Ex : Android 14">
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    Description du problème
+                </label>
+                <textarea name="Probleme"
+                          placeholder="Décrivez votre problème en détail..."></textarea>
+            </div>
+
+            <button type="submit">
+                <i class="fa-solid fa-paper-plane"></i>
+                Enregistrer sur votre pc héberger sur zupimage,net
+            </button>
+
+        </form>
+
+    </div>
+
+    <div class="footer">
+        <i class="fa-solid fa-lock"></i>
+        Copier en image sur le pc ensuite appuyez sur le bouton bleu redirection zupimage,net héberger la est copier balise pour forum.
+    </div>
+
+</div>
+
+</body>
+</html>
